@@ -1,0 +1,39 @@
+:root{
+    --cor-primaria: #556652;
+    --cor-secundaria: #31382E;
+    --cor-botoes: #242424;
+}
+
+header{
+    background-image: url(/src/images/home-papeldeparede2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+
+}
+.nav-item {
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+a{
+    color: white;
+}
+
+
+.desc{
+    padding-top: 400px;
+   
+}
+
+.desc-name{
+    text-align: center;
+    font-size: 64px;
+}
+
+.desc-description{
+    text-align: center;
+    font-size: 30px;
+}
+
