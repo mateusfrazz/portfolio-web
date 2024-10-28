@@ -1,70 +1,130 @@
-:root{
+:root {
     --cor-primaria: #556652;
     --cor-secundaria: #31382E;
     --cor-botoes: #242424;
 }
-/* Inicio do Header */
 
-header{
-    background-image: url(/src/images/pexels-arunbabuthomas-1156683.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Inicio do Header */
+header {
+    background-color: #21272F;
     width: 100%;
-    height: 800px;
+    height: 950px;
     padding-top: 50px;
 }
 
-.nav-item {
-    margin-left: 20px; 
-    margin-right: 20px; 
-}
-
-a{
+header a {
     color: white;
 }
 
-/* a ::after{
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: #556652;
-} */
-
-.desc{
-    padding-top: 350px;   
+header .mainheader {
+    max-width: 1200px; /* Ajuste para permitir que o layout se expanda */
+    margin: 0 auto;
 }
 
-.desc-name{
-    text-align: center;
-    font-size: 64px;
+.maindesc {
+    margin-left: 56px;
+    padding-top: 150px;
 }
 
-.desc-description{
-    text-align: center;
+.maindesc h4 {
+    color: white;
     font-size: 30px;
 }
 
-.iconimage{
- width: 120px;
- padding-top: 50px; 
- transition: transform 0.3s;
- cursor: pointer;
+.maindesc span {
+    color: #03C092;
 }
 
-/* Transições do header */
-.iconimage:hover{
-    transform: scale(1.1);   
+.maindesc h1 {
+    color: #03B08B;
+    font-size: 60px;
 }
-/* 
-Final do header */
 
-main .profile img{
-    width: 24.3125rem;
-    height: 26.5rem;
+.maindesc .desc-text {
+    color: white;
+    padding-top: 20px;
+}
+
+.maindesc .botao {
     padding-top: 50px;
+    cursor: pointer;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden; 
 }
 
+.maindesc .botao button {
+    width: 150px;
+    height: 55px;
+    color: white;
+    background: linear-gradient(45deg, #00ffb2, #00d2ff); /* Cores do gradiente */
+    transition: box-shadow 0.3s;
+    border: none;
+    border-radius: 20px; /* Arredonda as bordas */
+    font-weight: bold;
+    cursor: pointer;
+  
+}
 
+.icons-user {
+    gap: 40px;
+    padding-top: 70px;
+}
 
+.icons-user .icons {
+    width: 50px;
+    height: 50px;
+    background-color: #165750;
+    border-radius: 10px;
+    transition: transform 1s ease-in-out;
+    
+}
 
+.icons-user img {
+    margin: 9px;
+    width: 30px;
+}
 
+.imgprofile {
+    width: 60%;
+    padding-left: 120px;
+    margin: auto;
+}
+
+.imgprofile img {
+    width: 400px;
+    border-radius: 10px;
+    
+}
+
+.desc-footer{
+    width: 100%;
+    background-color: #1F252D;
+    height: 100px;
+    text-align: center;
+    
+}
+
+.desc-footer h1{
+    padding-top: 60px;
+    font-size: 10px;
+    padding-left: 12px;
+    color: aliceblue;
+}
+
+/* transições */
+
+.icons :hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+button:hover {
+        background: linear-gradient(45deg, #00d2ff, #00ffb2); /* Gradiente invertido para o efeito de hover */
+        box-shadow: 0px 0px 20px rgba(0, 255, 178, 0.7); /* Sombra mais intensa no hover */
+}
+
+a :hover{
+   color: #00ffb2!;
+   cursor: pointer;
+}
