@@ -1,0 +1,89 @@
+:root{
+    --cor-primaria: #556652;
+    --cor-secundaria: #31382E;
+    --cor-botoes: #242424;
+}
+/* Inicio do Header */
+
+header{
+    background-color: #21272F ;
+    width: 100%;
+    height: 950px;
+    padding-top: 50px;
+}
+
+header a{
+    color: white;
+}
+
+header .mainheader{
+    width: 40%;
+}
+.maindesc{
+    
+    margin-left: 56px;
+    padding-top: 150px;
+}
+
+.maindesc h4{
+    color:white;
+    font-size: 30px;
+}
+
+.maindesc span{
+    color: #03C092;
+}
+
+.maindesc h1{
+    color: #03B08B;
+    font-size: 60px
+}
+
+.maindesc .desc-text{
+    color: white;
+    padding-top: 20px;
+}
+
+.maindesc .botao{
+   padding-top: 50px;
+}
+
+.maindesc .botao button{
+    width: 150px;
+    height: 55px;
+   
+    background-color: #03C092;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+.icons-user{
+    gap: 40px;
+    padding-top: 70px;
+  }
+
+.icons-user .icons{
+    width: 50px;
+    height: 50px;
+    background-color: #165750;
+    border-radius: 10px;
+    
+}
+
+.icons-user .github{
+    width: 50px;
+    height: 50px;
+    background-color: #165750;
+    border-radius: 10px;
+    
+}
+
+.icons-user img{
+    margin :9px;
+    width: 30px;
+
+}
+
+.imgprofile{
+    widht: 60%
+}
