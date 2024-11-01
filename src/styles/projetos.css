@@ -1,75 +1,113 @@
-:root {
-    --cor-primaria: #556652;
-    --cor-secundaria: #31382E;
-    --cor-botoes: #242424;
+.card {
+    width: 18rem; /* Definindo a largura do card */
+    height: 100%; /* Fazendo o card ocupar toda a altura disponível */
+    display: flex;
+    flex-direction: column; /* Alinhando os itens verticalmente */
 }
 
+.card-img-top {
+    height: 150px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Fazendo a imagem cobrir o espaço sem distorcer */
+}
 
-body{
+.card-body {
+    flex-grow: 1; /* Fazendo o corpo do card crescer para preencher o espaço */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #21272F;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+header a{
+    color: aliceblue;
+}
+
+.text-main {
+    text-align: center;
+    padding-bottom: 120px;
+    font-size: 60px;
+}
+
+.text-main span {
+    color: #03C092;
+}
+
+.cards {
     display: flex;
-    padding:  0 10px;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 120px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #00ffb2, #00d2ff); /* Cores do gradiente */
+    transition: box-shadow 0.3s;
+  border-radius: 20px;
+  text-decoration: none;
+  border:none;
+}
+
+.card{
+    background-color: #29303a;
+    transition: transform 0.3s ease; /* Transição suave */
+    cursor: pointer;
+}
+
+.modal{
     background-color: #21272F;
 }
 
-.wrapper {
-    max-width: 800px;
-    position: relative;
+
+/* transições */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card em 5% ao passar o mouse */
 }
 
-.wrapper i {
-    top: 50%;
-    height: 46px;
-    width: 46px;
-    position: absolute;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 46px;
-    background: white;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 10; /* Garante que o ícone fique sobre a imagem */
+.btn  :hover{
+    background: linear-gradient(45deg, #00d2ff, #00ffb2); /* Gradiente invertido para o efeito de hover */
+        box-shadow: 0px 0px 20px rgba(0, 255, 178, 0.7); /* Sombra mais intensa no hover */
 }
 
-.wrapper i:first-child {
-    left: -9; /* Ajuste a posição para a esquerda */
+.modal-content{
+    background-color: #2f3742;
+    border: none;
+    text-decoration: none;
 }
 
-.wrapper i:last-child {
-    right: -23px; /* Ajuste a posição para a direita */
+.visitar-btn{
+  color: aliceblue;
+  text-decoration: none;
 }
 
-.wrapper .carousel{
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    padding-left: 10px;
+.close{
+    color: white;
 }
 
-.carousel img{
-    height: 250px;
-    width: calc(100% / 3);
-    object-fit: cover;
-    margin-left: 14px;
+.footer{
     
 }
 
-.carousel img :first-child{
-    margin-left: 0px;
+.desc-footer{
+    width: 100%;
+    background-color: #1F252D;
+    height: 100px;
+    text-align: center;
 }
 
-@media screen and (max-width: 900px){
-   .carousel img{
-    width: calc(100% / 2);
-   }
+.desc-footer h1{
+    padding-top: 60px;
+    font-size: 10px;
+    padding-left: 12px;
+    color: aliceblue;
 }
-
-@media screen and (max-width: 550px){
-    .carousel img{
-     width: 100%;
-    }
- }
