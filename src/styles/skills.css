@@ -37,6 +37,17 @@ main{
     height: 120px;
 }
 
+.modal-footer button{
+    background-color: #034938;
+    border: none;
+}
+
+.modal-header, .modal-footer ,.modal-body {
+    color: white;
+    background-color: #101316dc; ;
+    border: none; /* Remove a linha entre header e body, e entre body e footer */   
+}
+
 .skills{
     /* background-color: black; */
     width: 70%;
@@ -102,12 +113,6 @@ main{
    
 }
 
-.skills .skill-content :hover{
-    
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(3, 192, 146, 0.37);
-    transform: scale(1.05); 
-}
 .custom-icon {
     width: 50px;
     height: 60px;
@@ -115,3 +120,16 @@ main{
     text-align: center;
 }
 
+/* transições e animações */
+.skills .skill-content:hover {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(3, 192, 146, 0.37);
+    transform: scale(1.05); /* Efeito de aumento no card */
+    background: none; /* Remove o fundo preto */
+}
+
+.play-button:hover {
+    transform: scale(1.1); /* Aumento leve do botão de play */
+    box-shadow: 0 0 15px rgba(3, 192, 146, 0.5); /* Realce no hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave */
+}
