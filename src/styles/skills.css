@@ -9,11 +9,7 @@ body{
     width: 100%;
     height: 100%;
     padding-top: 20px;
-   background-image: 
-   linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Gradiente para escurecer o fundo */
-   url(/src/images/black.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
+   background-color:#1F252D;
    
 }
 
@@ -28,20 +24,45 @@ main{
     
 }
 
+.descicon h1{
+    font-size: 20px;
+}
+
 .text-main span{
     color: #03C092;
 }
 
+.ifa-brands {
+    width: 120px;
+    height: 120px;
+}
+
 .skills{
     /* background-color: black; */
-    width: 90%;
+    width: 70%;
     height: 80%;
     gap: 40px;
     padding-top: 40px;
 }
 
+.btn {
+    background: linear-gradient(45deg, #00ffb2, #00d2ff); /* Cores do gradiente */
+    transition: box-shadow 0.3s;
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+    text-decoration: none;
+    border:none;
+    margin-top: 20px;
+}
+
+.btn i{
+    color: #eef1f5;
+}
+
 .skills .skill-content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 250px;
@@ -58,10 +79,20 @@ main{
     
 }
 
+.descicon{
+    padding-top: 10px;
+}
+
+.text-main{
+    padding-top: 300px;
+}
+
+
+
 .skills .skill-content :hover{
     
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(3, 192, 146, 0.37);
     transform: scale(1.05); 
-
 }
+
