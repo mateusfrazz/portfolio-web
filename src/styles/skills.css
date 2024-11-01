@@ -87,12 +87,21 @@ main{
     padding-top: 300px;
 }
 
-
+.skill-content i{
+    width: 100px;
+   
+}
 
 .skills .skill-content :hover{
     
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(3, 192, 146, 0.37);
     transform: scale(1.05); 
+}
+.custom-icon {
+    width: 50px;
+    height: 60px;
+    font-size: 60px; /*Esse tamanho ajusta a altura visual do ícone */
+    text-align: center;
 }
 
