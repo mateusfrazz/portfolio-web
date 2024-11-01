@@ -1,66 +1,113 @@
-:root {
-    --cor-primaria: #556652;
-    --cor-secundaria: #31382E;
-    --cor-botoes: #242424;
+.card {
+    width: 18rem; /* Definindo a largura do card */
+    height: 100%; /* Fazendo o card ocupar toda a altura disponível */
+    display: flex;
+    flex-direction: column; /* Alinhando os itens verticalmente */
 }
 
+.card-img-top {
+    height: 150px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Fazendo a imagem cobrir o espaço sem distorcer */
+}
 
-body{
+.card-body {
+    flex-grow: 1; /* Fazendo o corpo do card crescer para preencher o espaço */
+}
+
+body {
+    margin: 0;
+    padding: 0;
     background-color: #21272F;
-    width: 100%;
-    height: 90%;
-    
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 header {
-    
+    padding: 10px 0;
+    text-align: center;
     padding-top: 50px;
+    padding-bottom: 200px;
 }
 
-header a {
-    color: rgb(252, 251, 251);
+header a{
+    color: aliceblue;
 }
 
-header h1{
-    color: rgb(235, 235, 235);
-    padding-top: 200px;
-    padding-left: 30px;
+.text-main {
+    text-align: center;
+    padding-bottom: 120px;
+    font-size: 60px;
 }
 
-main{
-    width: 90%;
-    height: 70%;
-    padding-top: 100px;
+.text-main span {
+    color: #03C092;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
-    
-    
-    
+    padding-bottom: 120px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #00ffb2, #00d2ff); /* Cores do gradiente */
+    transition: box-shadow 0.3s;
+  border-radius: 20px;
+  text-decoration: none;
+  border:none;
+}
+
+.card{
+    background-color: #29303a;
+    transition: transform 0.3s ease; /* Transição suave */
+    cursor: pointer;
+}
+
+.modal{
+    background-color: #21272F;
+}
+
+
+/* transições */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card em 5% ao passar o mouse */
+}
+
+.btn  :hover{
+    background: linear-gradient(45deg, #00d2ff, #00ffb2); /* Gradiente invertido para o efeito de hover */
+        box-shadow: 0px 0px 20px rgba(0, 255, 178, 0.7); /* Sombra mais intensa no hover */
+}
+
+.modal-content{
+    background-color: #2f3742;
+    border: none;
+    text-decoration: none;
+}
+
+.visitar-btn{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.close{
+    color: white;
+}
+
+.footer{
     
 }
 
-main .cards{
-   
-   width: 351px;
-   height: 301px; 
-   border-radius: 10px;
-   
+.desc-footer{
+    width: 100%;
+    background-color: #1F252D;
+    height: 100px;
+    text-align: center;
 }
 
-.card1{
-    background-image: url(/src/images/215383038-e7018475-f4b3-4147-a496-21f471142efe.png);
-    background-size: cover;
-    background-position: center;
+.desc-footer h1{
+    padding-top: 60px;
+    font-size: 10px;
+    padding-left: 12px;
+    color: aliceblue;
 }
-  
-.card2{
-    background-image: url(/src/images/215793027-4b7e811f-94ae-4ff7-b83c-b0a2eea6a5cf.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.card3{
-    background-image: url(/src/images/215799058-19cd3216-674f-429b-8172-93a57e21fae4.png);
-    background-size: cover;
-    background-position: center;
-}
-
