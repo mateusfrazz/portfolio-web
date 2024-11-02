@@ -12,8 +12,15 @@ header {
     padding-top: 50px;
 }
 
+header .nav-link {
+    color: white !important; /* Força a cor branca nos links */
+    text-decoration: none; /* Remove a sublinha padrão */
+}
+
 header a {
     color: white;
+    position: relative;
+    text-decoration: none; /* Remove a sublinha padrão */
 }
 
 header .mainheader {
@@ -124,7 +131,25 @@ button:hover {
         box-shadow: 0px 0px 20px rgba(0, 255, 178, 0.7); /* Sombra mais intensa no hover */
 }
 
-a :hover{
-   color: #00ffb2!;
-   cursor: pointer;
+header a :hover{
+    color: #038a6d 
+}
+
+header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #03B08B; /* Cor da linha */
+    transition: width 0.6s ease; /* Transição suave */
+}
+
+header a:hover::after {
+    width: 100%; /* Expande a linha ao passar o mouse */
+}
+
+header .nav-link:hover {
+    color: #03B08B !important; /* Cor desejada ao passar o mouse */
 }
