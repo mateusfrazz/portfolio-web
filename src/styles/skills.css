@@ -13,7 +13,11 @@ body{
    
 }
 
-a{
+nav ul{
+    padding-top: 40px;
+}
+
+header a{
     color: white;
 }
 
@@ -26,6 +30,11 @@ main{
 
 .descicon h1{
     font-size: 20px;
+}
+
+.text-main h1{
+    font-size: 50px;
+
 }
 
 .text-main span{
