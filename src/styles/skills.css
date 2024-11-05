@@ -9,8 +9,7 @@ body{
     width: 100%;
     height: 100%;
     padding-top: 20px;
-   background-color:#1F252D;
-   
+    background-color:#1F252D;
 }
 
 nav ul{
@@ -24,8 +23,7 @@ header a{
 main{
     width: 100%;
     height:  800px;
-    color: white;
-    
+    color: white;   
 }
 
 .descicon h1{
@@ -34,7 +32,6 @@ main{
 
 .text-main h1{
     font-size: 50px;
-
 }
 
 .text-main span{
@@ -49,12 +46,6 @@ main{
 .modal-footer button{
     background-color: #034938;
     border: none;
-}
-
-.modal-header, .modal-footer ,.modal-body {
-    color: white;
-    background-color: #101316dc; ;
-    border: none; /* Remove a linha entre header e body, e entre body e footer */   
 }
 
 .skills{
@@ -106,7 +97,6 @@ main{
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.322);
     box-shadow: 0 8px 32px 0 rgba(216, 218, 217, 0.13);
-    
 }
 
 .descicon{

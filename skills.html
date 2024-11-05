@@ -10,6 +10,7 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script src="https://kit.fontawesome.com/e83b0b17a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/styles/skills.css">
+    <link rel="stylesheet" href="/src/styles/principal.css">
     <title>Olá, mundo!</title>
   </head>
   <body class="d-flex justify-content-center flex-column align-items-center"> 
@@ -47,7 +48,7 @@
              </div>
             <div class="descicon">
                 <h1>HTML</h1>
-                <div class="play-button" data-toggle="modal" data-target="#exampleModal">
+                <div class="play-button" data-toggle="modal" data-target="#Modalhtml">
                     <i class="fa fa-play icon-btn"></i>
                    </div>
             </div>
@@ -61,7 +62,7 @@
         </div>
         <div class="descicon">
             <h1>CSS</h1>
-            <div class="play-button" data-toggle="modal" data-target="#exampleModal">
+            <div class="play-button" data-toggle="modal" data-target="#Modalcss">
                 <i class="fa fa-play icon-btn"></i>
                </div>
         </div>
@@ -74,7 +75,7 @@
         </div>
         <div class="descicon">
            <h1>Database</h1>
-           <div class="play-button" data-toggle="modal" data-target="#exampleModal">
+           <div class="play-button" data-toggle="modal" data-target="#Modaldatabase">
             <i class="fa fa-play icon-btn"></i>
            </div>
         </div>
@@ -85,7 +86,7 @@
         </div>
         <div class="descicon">
            <h1>Java</h1>
-           <div class="play-button" data-toggle="modal" data-target="#exampleModal">
+           <div class="play-button" data-toggle="modal" data-target="#Modaljava">
             <i class="fa fa-play icon-btn"></i>
            </div>
         </div>
@@ -96,7 +97,7 @@
         </div>
         <div class="descicon">
            <h1>figma</h1>
-           <div class="play-button" data-toggle="modal" data-target="#exampleModal">
+           <div class="play-button" data-toggle="modal" data-target="#Modalfigma">
             <i class="fa fa-play icon-btn"></i>
            </div>
         </div>
@@ -107,7 +108,7 @@
         </div>
         <div class="descicon">
            <h1>Python</h1>
-           <div class="play-button" data-toggle="modal" data-target="#exampleModal">
+           <div class="play-button" data-toggle="modal" data-target="#Modalpython">
             <i class="fa fa-play icon-btn"></i>
         </div>
         </div>
@@ -117,7 +118,7 @@
 <!-- fim dos cards -->
 
 <!-- Modal centralizado -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Modalhtml" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -127,10 +128,76 @@
                 </button>
             </div>
             <div class="modal-body">
-                HTML (HyperText Markup Language) é a linguagem padrão para criar e estruturar páginas na web. Ela define o conteúdo e a organização de uma página através de elementos como cabeçalhos, parágrafos, imagens, links, listas e formulários. Cada elemento HTML é representado por tags, que indicam como o conteúdo será exibido e funcionará no navegador.
+               <p>HTML (HyperText Markup Language) é a linguagem padrão para criar e estruturar páginas na web. Ela define o conteúdo e a organização de uma página através de elementos como cabeçalhos, parágrafos, imagens, links, listas e formulários. Cada elemento HTML é representado por tags, que indicam como o conteúdo será exibido e funcionará no navegador.</p>
             </div>
             <div class="modal-footer">
                 <a href="https://www.w3schools.com/html/">
+                    <button type="button" class="btn btn-primary">Documentação</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal css -->
+<div class="modal fade" id="Modalcss" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mais sobre CSS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <p>CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense na decoração da sua página.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/CSS_basics">
+                    <button type="button" class="btn btn-primary">Documentação</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal database -->
+<div class="modal fade" id="#Modaldatabase" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mais sobre Database</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <p>Database é uma ferramenta poderosa para armazenar, organizar e recuperar informações de maneira eficiente. Embora apresente desafios, os bancos de dados são essenciais para empresas e organizações que precisam gerenciar grandes quantidades de informações.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://suporte.goalfy.com.br/portal/pt-br/kb/articles/o-que-eh-uma-database#:~:text=Basicamente%2C%20uma%20Database%20%C3%A9%20uma,gerenciar%20grandes%20quantidades%20de%20informa%C3%A7%C3%B5es.">
+                    <button type="button" class="btn btn-primary">Documentação</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal java -->
+<div class="modal fade" id="#Modaljava" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mais sobre Database</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <p>Database é uma ferramenta poderosa para armazenar, organizar e recuperar informações de maneira eficiente. Embora apresente desafios, os bancos de dados são essenciais para empresas e organizações que precisam gerenciar grandes quantidades de informações.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://suporte.goalfy.com.br/portal/pt-br/kb/articles/o-que-eh-uma-database#:~:text=Basicamente%2C%20uma%20Database%20%C3%A9%20uma,gerenciar%20grandes%20quantidades%20de%20informa%C3%A7%C3%B5es.">
                     <button type="button" class="btn btn-primary">Documentação</button>
                 </a>
             </div>
