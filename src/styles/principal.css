@@ -1,15 +1,17 @@
 /* Estilizações gerais para todas as paginas */
 
-body {
-    /* Removendo a barra de rolagem vertical */
-    overflow-y: hidden;
-}
+
 
 header .navbar a {
     color: white;
     position: relative;
     text-decoration: none; /* Remove a sublinha padrão */
+    
 }
+
+/* header .navbar  {
+   margin-bottom: 120px;
+} */
 
 .modal-header, .modal-footer ,.modal-body {
     color: white;
@@ -22,23 +24,6 @@ header .navbar a {
     color: white;
     text-decoration: none;
 }
-
-.desc-footer{
-    width: 100%;
-    background-color: #1F252D;
-    height: 100px;
-    text-align: center;
-    
-}
-
-.desc-footer h1{
-    padding-top: 60px;
-    font-size: 10px;
-    padding-left: 12px;
-    color: aliceblue;
-}
-
-
 /* Transições */
 
 .modal-footer button{
@@ -59,3 +44,5 @@ header .navbar a::after {
 header .navbar a:hover::after {
     width: 100%; /* Expande a linha ao passar o mouse */
 }
+
+

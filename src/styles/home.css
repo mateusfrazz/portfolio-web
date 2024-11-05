@@ -4,29 +4,34 @@
     --cor-botoes: #242424;
 }
 
-/* Inicio do Header */
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #21272F;
+
+}
+
 header {
     background-color: #21272F;
     width: 100%;
-    height: 950px;
+    height: 800px;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 header .mainheader {
-    max-width: 1200px; /* Ajuste para permitir que o layout se expanda */
+    max-width: 1200px;
     margin: 0 auto;
+    margin-top: 8.125rem;
 }
 
-/* fim do conteudo principal */
-
 .maindesc {
-    margin-left: 56px;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .maindesc h4 {
     color: white;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .maindesc span {
@@ -35,7 +40,7 @@ header .mainheader {
 
 .maindesc h1 {
     color: #03B08B;
-    font-size: 60px;
+    font-size: 3rem;
 }
 
 .maindesc .desc-text {
@@ -44,29 +49,25 @@ header .mainheader {
 }
 
 .maindesc .botao {
-    padding-top: 50px;
+    padding-top: 30px;
     cursor: pointer;
     outline: none;
-    cursor: pointer;
-    overflow: hidden; 
 }
 
 .maindesc .botao button {
     width: 150px;
     height: 55px;
     color: white;
-    background: linear-gradient(45deg, #00ffb2, #00d2ff); /* Cores do gradiente */
-    transition: box-shadow 0.3s;
+    background: linear-gradient(45deg, #00ffb2, #00d2ff);
     border: none;
-    border-radius: 20px; /* Arredonda as bordas */
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-  
 }
 
 .icons-user {
-    gap: 40px;
-    padding-top: 70px;
+    gap: 20px;
+    padding-top: 40px;
 }
 
 .icons-user .icons {
@@ -74,8 +75,7 @@ header .mainheader {
     height: 50px;
     background-color: #165750;
     border-radius: 10px;
-    transition: transform 1s ease-in-out;
-    
+    transition: transform 0.3s ease-in-out;
 }
 
 .icons-user img {
@@ -83,27 +83,81 @@ header .mainheader {
     width: 30px;
 }
 
-.imgprofile {
-    width: 60%;
-    padding-left: 120px;
-    margin: auto;
-}
-
 .imgprofile img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px;
-    
 }
 
-/* transições */
 
-.icons :hover{
+
+.desc-footer h1 {
+    color: white;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+
+
+.icons :hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
 button:hover {
-        background: linear-gradient(45deg, #00d2ff, #00ffb2); /* Gradiente invertido para o efeito de hover */
-        box-shadow: 0px 0px 20px rgba(0, 255, 178, 0.7); /* Sombra mais intensa no hover */
+    background: linear-gradient(45deg, #00d2ff, #00ffb2);
+    box-shadow: 0px 0px 20px rgba(0, 255, 178, 0.7);
+}
+
+footer {
+    width: 100%;
+    height: 20px; /* Corrigido para minúsculas */
+    text-align: center;
+    margin-top: 20px;
+    background-color: #21272F;
+    position: relative; /* ou relative, dependendo do seu design */
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .maindesc {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .imgprofile {
+        width: 80%;
+        padding-left: 0;
+    }
+
+    .icons-user {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 769px) {
+    .mainheader {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .maindesc h1 {
+        font-size: 2.5rem;
+    }
+
+    .maindesc h4, .maindesc .desc-text {
+        font-size: 1rem;
+    }
+
+    .imgprofile {
+        display: none;
+    }
+    .navbar {
+        font-size: .75rem;
+    }
 }
 

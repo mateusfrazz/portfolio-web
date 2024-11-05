@@ -1,18 +1,4 @@
-.card {
-    width: 18rem; /* Definindo a largura do card */
-    height: 100%; /* Fazendo o card ocupar toda a altura disponível */
-    display: flex;
-    flex-direction: column; /* Alinhando os itens verticalmente */
-}
 
-.card-img-top {
-    height: 150px; /* Altura fixa para a imagem */
-    object-fit: cover; /* Fazendo a imagem cobrir o espaço sem distorcer */
-}
-
-.card-body {
-    flex-grow: 1; /* Fazendo o corpo do card crescer para preencher o espaço */
-}
 
 body {
     margin: 0;
@@ -20,13 +6,14 @@ body {
     background-color: #21272F;
     color: white;
     font-family: Arial, sans-serif;
+    gap: 9.375rem
 }
 
 header {
     padding: 10px 0;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 
 .text-main {
@@ -39,9 +26,20 @@ header {
     color: #03C092;
 }
 
+
+.card-img-top {
+    height: 150px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Fazendo a imagem cobrir o espaço sem distorcer */
+}
+
+.card-body {
+    flex-grow: 1; /* Fazendo o corpo do card crescer para preencher o espaço */
+}
+
 .cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     padding-bottom: 120px;
 }
@@ -55,6 +53,10 @@ header {
 }
 
 .card{
+    width: 18rem; /* Definindo a largura do card */
+    height: 100%; /* Fazendo o card ocupar toda a altura disponível */
+    display: flex;
+    flex-direction: column; /* Alinhando os itens verticalmente */
     background: linear-gradient(135deg, rgba(240, 238, 238, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -67,14 +69,19 @@ header {
     cursor: pointer;
 }
 
-.modal{
-    background-color: #21272F;
-    border: none;
+.modal-title{
     text-align: center;
 }
 
-.modal-title{
+footer {
+    width: 100%;
+    height: 20px; /* Corrigido para minúsculas */
     text-align: center;
+    margin-top: 250px;
+    background-color: #21272F;
+    position: relative; /* ou relative, dependendo do seu design */
+    bottom: 0;
+    left: 0;
 }
 
 /* transições */
@@ -100,5 +107,21 @@ header {
     color: white;
 }
 
+/* responsividade  */
+@media (max-width: 1211px) {
+    .cards{
+        align-items: center;
+        justify-content: center;
+    }
 
+}
 
+@media (max-width: 530px) {
+       .modalmain{
+        width: 100px; 
+      }
+
+      .videocard{
+        width: 350px;
+      }
+}

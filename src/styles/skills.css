@@ -10,14 +10,16 @@ body{
     height: 100%;
     padding-top: 20px;
     background-color:#1F252D;
-}
+    gap: 9.375rem
 
-nav ul{
-    padding-top: 40px;
 }
 
 header a{
     color: white;
+}
+
+ header nav ul{
+    padding-top: 40px;
 }
 
 main{
@@ -53,9 +55,8 @@ main{
     width: 70%;
     height: 80%;
     gap: 40px;
-    padding-top: 40px;
+     
 }
-
 
 .play-button {
     width: 40px;
@@ -103,13 +104,8 @@ main{
     padding-top: 10px;
 }
 
-.text-main{
-    padding-top: 300px;
-}
-
 .skill-content i{
     width: 100px;
-   
 }
 
 .custom-icon {
