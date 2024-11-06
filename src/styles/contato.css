@@ -1,7 +1,13 @@
-body{
+body {
     width: 100%;
     height: 100%;
-     background-color:#1F252D;;
+    background-color: #1F252D;
+    margin: 0;
+}
+
+header{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 header a {
@@ -13,8 +19,9 @@ header nav ul {
 }
 
 main {
-    width: 60%;
-    height: 650px;
+    width: 80%; /* Aumenta a largura para 80% da tela */
+    max-width: 800px; /* Limita o tamanho máximo */
+    height: 600px;
     margin-top: 100px;
     background: linear-gradient(135deg, rgba(240, 238, 238, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -24,33 +31,62 @@ main {
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.322);
     box-shadow: 0 8px 32px 0 rgba(216, 218, 217, 0.13);
+    padding: 20px;
 }
 
-main form{
-    width: 600px;
+main form {
+    width: 100%; /* O formulário agora ocupa 100% da largura disponível */
     color: aliceblue;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    align-items: center;
+}
+
+main form .form-botton {
+    width: 100%; /* Ajusta a largura para 100% */
    
-}
-
-main form input {
-    
-}
-
-main form .form-botton{
-    width: 400px;
     margin-top: 14px;
-
 }
 
-main form .btn{
-    width: 400px;
-    height: 50px;
+.form-group{
+    width: 60%;
 }
 
+footer {
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    margin-top: 300px;
+    text-align: center;
+}
 
+footer h1 {
+    color: white;
+    font-size: 15px;
+}
+
+.btao{
+    padding-top: 40px;
+    width: 60%;
+}
+
+.btn-enviar {
+   width: 100%;
+}
+
+/* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
-    
+    main {
+        width: 90%; /* Ajusta para 90% em telas menores */
+        margin-top: 50px;
+    }
+
+    main form .form-botton {
+        width: 100%; /* Ajusta os inputs para ocuparem toda a largura da tela */
+    }
+
+    footer h1 {
+        font-size: 12px; /* Reduz o tamanho da fonte no rodapé */
+    }
 }
-
-
