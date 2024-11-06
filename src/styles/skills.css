@@ -1,42 +1,42 @@
-*{
+
+* {
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     padding-top: 20px;
-    background-color:#1F252D;
-    gap: 9.375rem
-
+    background-color: #1F252D;
+    gap: 9.375rem;
 }
 
-header a{
+header a {
     color: white;
 }
 
- header nav ul{
+header nav ul {
     padding-top: 40px;
 }
 
-main{
+main {
     width: 100%;
-    height:  800px;
-    color: white;   
+    height: auto;
+    color: white;
 }
 
-.descicon h1{
+.descicon h1 {
     font-size: 20px;
 }
 
-.text-main h1{
+.text-main h1 {
     font-size: 50px;
 }
 
-.text-main span{
+.text-main span {
     color: #03C092;
 }
 
@@ -45,17 +45,20 @@ main{
     height: 120px;
 }
 
-.modal-footer button{
+.modal-footer button {
     background-color: #034938;
     border: none;
 }
 
-.skills{
-    /* background-color: black; */
+.skills {
     width: 70%;
-    height: 80%;
+    height: auto;
     gap: 40px;
-     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .play-button {
@@ -69,26 +72,25 @@ main{
     align-items: center;
     font-size: 20px;
     cursor: pointer;
-    margin-top: 30px; /* Distância do título */
+    margin-top: 30px;
     margin-left: 5px;
-
 }
 
-.icon-btn{
+.icon-btn {
     padding-left: 13px;
 }
 
-.btn i{
+.btn i {
     color: #eef1f5;
 }
 
-.skills .skill-content{
+.skills .skill-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 250px; /* Ajuste para mais espaço */
+    height: 250px;
     gap: 10px;
     background: linear-gradient(135deg, rgba(240, 238, 238, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -98,20 +100,21 @@ main{
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.322);
     box-shadow: 0 8px 32px 0 rgba(216, 218, 217, 0.13);
+    margin-bottom: 20px;
 }
 
-.descicon{
+.descicon {
     padding-top: 10px;
 }
 
-.skill-content i{
+.skill-content i {
     width: 100px;
 }
 
 .custom-icon {
     width: 50px;
     height: 60px;
-    font-size: 60px; /*Esse tamanho ajusta a altura visual do ícone */
+    font-size: 60px;
     text-align: center;
 }
 
@@ -127,4 +130,61 @@ main{
     transform: scale(1.1); /* Aumento leve do botão de play */
     box-shadow: 0 0 15px rgba(3, 192, 146, 0.5); /* Realce no hover */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .text-main h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .skills {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .skills .skill-content {
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 576px) {
+    header nav ul {
+        padding-top: 20px;
+        font-size: 13px;
+    }
+
+    .text-main h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .descicon h1 {
+        font-size: 16px;
+    }
+
+    .skills {
+        width: 90%;
+    }
+
+    .skills .skill-content {
+        width: 150px;
+        height: 170px;
+    }
+
+    .play-button {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .icon-btn{
+        width: 20px;
+        margin: 0;
+        
+    }
 }

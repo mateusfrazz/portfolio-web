@@ -8,6 +8,10 @@ header a {
     color: aliceblue;
 }
 
+header nav ul {
+    padding-top: 40px;
+}
+
 main {
     width: 60%;
     height: 650px;
