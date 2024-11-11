@@ -1,8 +1,16 @@
+//checar em qual página está para rodar a função certa
+// if (window.location.pathname.includes("contato.html")) {
+//     salvar();
+//  }
+ 
+//  if (window.location.pathname.includes("mensagens.html")) {
+//     carregar();
+//  }
+
+const dadosSalvos = JSON.parse(localStorage.getItem("dadosSalvos")) || [];
 // Função para salvar dados do localstorage
 function salvar (){
     // cria o array e obtem os dados do localStorage convertendo novamente para o array
-    const dadosSalvos = JSON.parse(localStorage.getItem("dadosSalvos")) || [];
-
     var email = document.getElementById("dado1").value;
     var mensagem = document.getElementById("dado2").value;
 
@@ -28,18 +36,26 @@ function salvar (){
 
 // função para carregar dados do localstorage
 function carregar(){
+    const container = document.getElementById('containerCards')
  //declarando uma variavel para recuperar o array existente no localstorage
- const dadosRecuperados = JSON.parse(localStorage.getItem("dadosRecuperados"));
- 
+ if (dadosSalvos && Array.isArray(dadosSalvos)) {
+    dadosSalvos.forEach(dado => {
+        console.log(dados); // Exibe cada item
+        const card = document.createElement ('div');
+        card.classList.add('card')
 
- //verificação para saber se tem contedo  no array localziado no localStorage
- if (dadosRecuperados === null){
-    console.log('tu é pica mermo')
- }
- 
+        
+    });
+} else {
+    alert('Erro, não há mensagens para mostrar no momento.')
 }
+}
+
+
 
 // // Função para limpar dadaos do localstorage
 function limpar(){
     localStorage.clear();
+    alert('Todos os itens foram excluidos')
 }
+
