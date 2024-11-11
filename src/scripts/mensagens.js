@@ -7,7 +7,6 @@ if (window.location.pathname.includes("mensagens.html")) {
     carregar();
 }
 
-
 function buscarDados() {
     return JSON.parse(localStorage.getItem("dadosSalvos")) || [];
 }
@@ -43,7 +42,6 @@ function salvar() {
 function carregar() {
     const container = document.getElementById('containerCards');
     
-    
     // Recupera os dados salvos no localStorage ou cria um array vazio
     let dadosSalvos = buscarDados();
      console.log(dadosSalvos);
@@ -55,7 +53,7 @@ function carregar() {
             <div class="card">
               <h3 class="text">${dado.email}</h3>
               <p class="text">${dado.mensagem}</p>
-              <button class="buttons" onclick='deletarItem(${index})'></button>
+              <button class="buttons" onclick='deletarItem(${index})'>Excluir</button>
             </div>
             
             `
@@ -67,15 +65,16 @@ function carregar() {
     
 }
 
-// Função para limpar dados do localStorage
+// Função para limpar todos dados do localStorage
 function limpar() {
     localStorage.clear();
     alert('Todos os itens foram excluídos');
 }
 
+// função para limpar somente um card 
 function deletarItem(index) {
     const dadosSalvos = buscarDados();
     dadosSalvos.splice(index, 1)
     localStorage.setItem("dadosSalvos", JSON.stringify(dadosSalvos));
-    location.reload()
+    location.reload();
 }
