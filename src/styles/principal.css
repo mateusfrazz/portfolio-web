@@ -1,5 +1,18 @@
 /* Estilizações gerais para todas as paginas */
 
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #21272F;
+
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+    padding-top: 50px;
+    /* padding-bottom: 200px; */
+}
 
 
 header .navbar a {

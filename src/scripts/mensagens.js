@@ -69,6 +69,7 @@ function carregar() {
 function limpar() {
     localStorage.clear();
     alert('Todos os itens foram excluídos');
+    location.reload();
 }
 
 // função para limpar somente um card 

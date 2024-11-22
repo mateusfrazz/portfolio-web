@@ -4,25 +4,15 @@
     --cor-botoes: #242424;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    background-color: #21272F;
-
-}
-
-header {
-    background-color: #21272F;
-    width: 100%;
-    height: 800px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
 header .mainheader {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 8.125rem;
+}
+
+ul {
+    color: white;
 }
 
 .maindesc {

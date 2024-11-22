@@ -15,57 +15,47 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/src/styles/mensagem.css" />
-    <link rel="stylesheet" href="/src/styles/principal.css" />
+    <link rel="stylesheet" href="./src/styles/mensagem.css" />
+    <link rel="stylesheet" href="./src/styles/principal.css" />
     <title></title>
   </head>
   <body class="d-flex flex-column justify-content-center align-items-center">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
+      
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link linknavbar" href="/index.html">Home</a>
+              <a class="nav-link linknavbar" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link linknavbar" href="/projetos.html">Projetos</a>
+              <a class="nav-link linknavbar" href="./projetos.html">Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link linknavbar" href="/skills.html">Skills</a>
+              <a class="nav-link linknavbar" href="./skills.html">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link linknavbar" href="/contato.html">Contato</a>
+              <a class="nav-link linknavbar" href="./contato.html">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link linknavbar"onclick ='carregar()' target="_blank" href="/mensagens.html"
-                >Mensagens</a
-              >
+              <a class="nav-link linknavbar" href="./mensagens.html">Mensagens</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <section>
+      <button type="button" class="btn btn-light btn-todos" onclick="limpar()">Apagar todas as mensagens</button>
+    </section>
     <main
       id="containerCards"
       class="d-flex flex-row justify-content-center align-items-center"
     >
-      
+   
     </main>
     <footer>
       <div class="desc-footer">
@@ -74,7 +64,7 @@
     </footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="/src/scripts/mensagens.js"></script>
+    <script src="./src/scripts/mensagens.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

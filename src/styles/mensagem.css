@@ -1,53 +1,76 @@
 body {
-    width: 100%;
-    height: 100%;
-    background-color: #1F252D;
-    margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f252d;
+  margin: 0;
 }
 
-main{
-    width: 80vw;
-    height: 70vh;
-    /* height: 800px; */
-    gap: 20px;
-    flex-wrap: wrap;
+header{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+header a {
+  color: aliceblue;
+}
+
+header nav ul {
+  padding-top: 40px;
+}
+
+main {
+  width: 80vw;
+  height: 70vh;
+  /* height: 800px; */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 25vh;
-        gap: 10px;
-        background: linear-gradient(135deg, rgba(240, 238, 238, 0.1), rgba(255, 255, 255, 0));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        transition: transform 0.3s ease;
-        border: 1px solid rgba(255, 255, 255, 0.322);
-        box-shadow: 0 8px 32px 0 rgba(216, 218, 217, 0.13);
-        overflow-wrap: break-word; /* Quebra automaticamente palavras grandes */
-        word-break: break-word; 
-} 
-   
-
-
-.text{
-    color: white;
-    font-size: 10PX;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  gap: 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(240, 238, 238, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  box-shadow: 0 8px 32px 0 rgba(216, 218, 217, 0.13);
+  overflow-wrap: break-word; /* Quebra automaticamente palavras grandes */
+  word-break: break-word;
 }
 
-button{
-    width:90px;
-    height: 30px;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    
+.text {
+  color: white;
+  font-size: 10px;
 }
 
-.text{
-font-size: 20px;
-/* text-align: center; */
+button {
+  width: 90px;
+  height: 30px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 20px;
+  /* text-align: center; */
+}
+
+section{
+  padding-top: 120px;
+}
+
+.btn-todos {
+   width: 220px;
+   height: 40px;
 }
